@@ -1,0 +1,166 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: 'Segoe UI', sans-serif; 
+  line-height: 1.6; 
+}
+
+.container { 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; 
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+
+h2 {
+  color: rgb(0, 0, 0);
+}
+
+a {
+  color: #000000;
+}
+
+header { 
+  background: #007bff;
+  color: #000000;
+  padding: 1rem 0; 
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+}
+
+.fotoperfil {
+  border-radius: 25%;
+}
+
+.encabezado {
+  background: #007bff; 
+  color: #000000;
+  padding: 1rem 0; 
+}
+
+.header-content { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  flex-wrap: wrap;
+}
+
+nav ul { 
+  display: flex; 
+  list-style: none; 
+}
+
+nav li { 
+  margin-left: 20px; 
+}
+
+nav a { 
+  color: #000000;
+  text-decoration: none; 
+}
+
+main { 
+  display: grid; 
+  grid-template-columns: 2fr 1fr; 
+  gap: 30px; 
+  margin: 30px 0; 
+}
+
+article { 
+  background: white; 
+  margin-bottom: 30px; 
+  box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.1); 
+  border-radius: 10px;
+}
+
+.article-meta { 
+  color: #000000; 
+  font-size: 0.9em; 
+  margin: 10px 0; 
+}
+
+aside { 
+  background: #007bff; 
+  padding: 20px; 
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.1);
+}
+
+footer { 
+  background: #007bff; 
+  color: black; 
+  text-align: center; 
+  padding: 20px 0; 
+}
+
+.search-form { 
+  margin: 20px 0; 
+}
+
+.tags { 
+  margin: 10px 0; 
+}
+
+.tag { 
+  background: #007bff; 
+  color: black; 
+  padding: 3px 8px; 
+  margin: 2px; 
+  font-size: 0.8em; 
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: row;  
+    justify-content: center; 
+    flex-wrap: wrap;     
+    padding: 10px 0;
+  }
+
+  nav li {
+    margin: 5px 10px; 
+  }
+
+  h1 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .fotoperfil {
+    margin: 10px 0;
+  }
+
+  main {
+    display: block;
+  }
+
+  article {
+    margin-bottom: 20px;
+  }
+
+  aside {
+    margin-top: 20px;
+  }
+}
